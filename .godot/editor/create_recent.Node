@@ -1,7 +1,9 @@
-MeshInstance3D
-CollisionShape3D
-StaticBody3D
-MultiMeshInstance3D
 DirectionalLight3D
 Camera3D
+SpringArm3D
+CollisionShape3D
+CharacterBody3D
+MeshInstance3D
+StaticBody3D
+MultiMeshInstance3D
 WorldEnvironment
