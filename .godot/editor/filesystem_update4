@@ -1,4 +1,4 @@
-res://main_menu.gd
-res://options_menu.gd
-res://Map_test.tscn
+res://stone.tscn
 res://akene.tscn
+res://Map_test.tscn
+res://tree.tscn

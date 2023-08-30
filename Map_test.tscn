@@ -1,4 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://rwdh2xourefa"]
+[gd_scene load_steps=6 format=3 uid="uid://ixidumoowta7"]
+
+[ext_resource type="PackedScene" uid="uid://bi8wnk77qfn0b" path="res://tree.tscn" id="1_5mwdr"]
+[ext_resource type="PackedScene" uid="uid://cwwv8p5nkllx5" path="res://player.tscn" id="2_mo3my"]
+[ext_resource type="PackedScene" uid="uid://ifvdclmi2ala" path="res://stone.tscn" id="3_c7dlw"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4tji5"]
 size = Vector3(100, 1, 100)
@@ -8,11 +12,9 @@ size = Vector3(100, 1, 100)
 
 [node name="Node3D" type="WorldEnvironment"]
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.28111, 35.1893)
-
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.185668, -0.899253, -0.396071, 0.819333, -0.080826, 0.567593, -0.542422, -0.429898, 0.72178, 0, 15.095, 0)
+transform = Transform3D(0.703525, -0.702015, 0.110578, 0.459163, 0.56777, 0.683232, -0.542422, -0.429898, 0.72178, 0, 737.012, 0)
+shadow_enabled = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 transform = Transform3D(200, 0, 0, 0, 0.1, 0, 0, 0, 200, 0, 0, 0)
@@ -22,6 +24,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00962917, 48.827, 0.0001162
 shape = SubResource("BoxShape3D_4tji5")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 270.2, -0.00629669)
 mesh = SubResource("BoxMesh_4mocp")
 skeleton = NodePath("../CollisionShape3D")
+
+[node name="tree" parent="." instance=ExtResource("1_5mwdr")]
+
+[node name="Player" parent="." instance=ExtResource("2_mo3my")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -811.106, 18.8709, 79.0766)
+
+[node name="stone" parent="." instance=ExtResource("3_c7dlw")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -826.228, 0, 534.621)
