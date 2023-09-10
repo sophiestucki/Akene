@@ -1,4 +1,9 @@
-res://main_menu.gd
-res://options_menu.gd
+res://models/Herbes/Herbe.tscn
+res://models/Herbes/Terrain.tscn
 res://Map_test.tscn
 res://akene.tscn
+res://models/Barrières/Fences.tscn
+res://player.tscn
+res://models/Joeur/Character.tscn
+res://models/Joueur/Character.tscn
+res://models/Joueur/Character.gd
