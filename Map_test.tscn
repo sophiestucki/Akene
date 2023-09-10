@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://ixidumoowta7"]
+[gd_scene load_steps=5 format=3 uid="uid://ixidumoowta7"]
 
 [ext_resource type="PackedScene" uid="uid://bi8wnk77qfn0b" path="res://tree.tscn" id="1_5mwdr"]
-[ext_resource type="PackedScene" uid="uid://ifvdclmi2ala" path="res://stone.tscn" id="3_c7dlw"]
 [ext_resource type="PackedScene" uid="uid://cokwur2hii5pe" path="res://models/Barrières/Fences.tscn" id="4_rkqyr"]
 [ext_resource type="PackedScene" uid="uid://t0wdowy6hb6w" path="res://models/Herbes/Terrain.tscn" id="5_lccj3"]
 [ext_resource type="PackedScene" uid="uid://c2adt7etqsj74" path="res://models/Joueur/Character.tscn" id="5_olqg4"]
@@ -13,14 +12,21 @@ transform = Transform3D(0.703525, -0.702015, 0.110578, 0.459163, 0.56777, 0.6832
 shadow_enabled = true
 
 [node name="tree" parent="." instance=ExtResource("1_5mwdr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -830.356, -0.371325, 1.24842)
-
-[node name="stone" parent="." instance=ExtResource("3_c7dlw")]
-transform = Transform3D(1, 0, 0, 0, 0.998333, -0.0577208, 0, 0.0577208, 0.998333, -826.228, 0.331267, 41.4062)
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 6.64398, 5.62867, -1.75158)
 
 [node name="fences" parent="." instance=ExtResource("4_rkqyr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.65545, 0)
+
+[node name="fences2" parent="." instance=ExtResource("4_rkqyr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.65545, -4)
+
+[node name="fences3" parent="." instance=ExtResource("4_rkqyr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8, 5.65545, 0)
+
+[node name="fences4" parent="." instance=ExtResource("4_rkqyr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 5.65545, 1.19209e-07)
 
 [node name="Terrain" parent="." instance=ExtResource("5_lccj3")]
 
 [node name="akene" parent="." instance=ExtResource("5_olqg4")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4.94729, 0, 0)
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -2.93383, 7.79294, 0)
