@@ -13,14 +13,24 @@ transform = Transform3D(0.703525, -0.702015, 0.110578, 0.459163, 0.56777, 0.6832
 shadow_enabled = true
 
 [node name="tree" parent="." instance=ExtResource("1_5mwdr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -830.356, -0.371325, 1.24842)
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 6.64398, 5.62867, -1.75158)
 
 [node name="stone" parent="." instance=ExtResource("3_c7dlw")]
-transform = Transform3D(1, 0, 0, 0, 0.998333, -0.0577208, 0, 0.0577208, 0.998333, -826.228, 0.331267, 41.4062)
+transform = Transform3D(0.282843, 0.0163259, 0.282371, 0, 0.399333, -0.0230883, -0.282843, 0.0163259, 0.282371, 4.77197, 5.53127, 2.4062)
 
 [node name="fences" parent="." instance=ExtResource("4_rkqyr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.65545, 0)
+
+[node name="fences2" parent="." instance=ExtResource("4_rkqyr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.65545, -4)
+
+[node name="fences3" parent="." instance=ExtResource("4_rkqyr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8, 5.65545, 0)
+
+[node name="fences4" parent="." instance=ExtResource("4_rkqyr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 5.65545, 1.19209e-07)
 
 [node name="Terrain" parent="." instance=ExtResource("5_lccj3")]
 
 [node name="akene" parent="." instance=ExtResource("5_olqg4")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4.94729, 0, 0)
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.0036131, 8.55393, 0)
