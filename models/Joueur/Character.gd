@@ -3,13 +3,14 @@ extends CharacterBody3D
 
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
+const DAMPING = .01
 
 var mouseSensibility = 1200
 var mouse_relative_x = 0
 var mouse_relative_y = 0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") * DAMPING
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
