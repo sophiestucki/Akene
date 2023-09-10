@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://ixidumoowta7"]
+[gd_scene load_steps=6 format=3 uid="uid://ixidumoowta7"]
 
 [ext_resource type="PackedScene" uid="uid://bi8wnk77qfn0b" path="res://tree.tscn" id="1_5mwdr"]
 [ext_resource type="PackedScene" uid="uid://cokwur2hii5pe" path="res://models/Barrières/Fences.tscn" id="4_rkqyr"]
 [ext_resource type="PackedScene" uid="uid://t0wdowy6hb6w" path="res://models/Herbes/Terrain.tscn" id="5_lccj3"]
+[ext_resource type="PackedScene" uid="uid://dkludc3njt0kk" path="res://models/Areas/wind_up.tscn" id="5_mg6vr"]
 [ext_resource type="PackedScene" uid="uid://c2adt7etqsj74" path="res://models/Joueur/Character.tscn" id="5_olqg4"]
 
 [node name="Node3D" type="WorldEnvironment"]
@@ -30,3 +31,6 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 5.6
 
 [node name="akene" parent="." instance=ExtResource("5_olqg4")]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -2.93383, 11.4393, 0)
+
+[node name="wind_up" parent="." instance=ExtResource("5_mg6vr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10444, 8.60066, 0.00486422)

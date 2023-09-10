@@ -1,8 +1,9 @@
+CollisionShape3D
+Area3D
 Node3D
 SpringArm3D
 MeshInstance3D
 MultiMeshInstance3D
-CollisionShape3D
 StaticBody3D
 Camera3D
 CharacterBody3D

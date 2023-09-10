@@ -54,6 +54,12 @@ ui_down={
 ]
 }
 
+[layer_names]
+
+3d_physics/layer_1="environment"
+3d_physics/layer_2="player"
+3d_physics/layer_3="pickups"
+
 [rendering]
 
 renderer/rendering_method.mobile="forward_plus"
