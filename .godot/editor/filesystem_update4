@@ -1,7 +1,8 @@
-res://models/Herbes/Terrain.tscn
-res://tree.tscn
 res://stone.tscn
+res://tree.tscn
+res://models/Herbes/Terrain.tscn
 res://Map_test.tscn
 res://models/Joueur/Character.tscn
 res://models/Barrières/Fences.tscn
-res://models/Joueur/Character.gd
+res://main_menu.tscn
+res://main_menu.gd
