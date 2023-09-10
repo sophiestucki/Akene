@@ -38,8 +38,12 @@ func _physics_process(delta):
 
 func _input(event):
 	if event is InputEventMouseMotion:
+		
 		rotation.y -= event.relative.x / mouseSensibility
-		$Camera3D.rotation.x -= event.relative.y / mouseSensibility
-		$Camera3D.rotation.x = clamp($Camera3D.rotation.x, deg_to_rad(-90), deg_to_rad(90))
+		$Pivot.rotation.x -= event.relative.y / mouseSensibility
+		$Pivot.rotation.x = clamp($Pivot.rotation.x, deg_to_rad(-90), deg_to_rad(90))
 		mouse_relative_x = clamp(event.relative.x, -50, 50)
 		mouse_relative_y = clamp(event.relative.y, -50, 50)
+		
+		$Visual.rotation.y = event.relative.x / mouseSensibility
+		$Visual.rotation.x = event.relative.y / mouseSensibility
