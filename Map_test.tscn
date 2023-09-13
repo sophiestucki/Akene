@@ -33,4 +33,4 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 5.6
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -2.93383, 11.4393, 0)
 
 [node name="wind_up" parent="." instance=ExtResource("5_mg6vr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10444, 8.60066, 0.00486422)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00463057, 8.87084, 0.113683)

@@ -2,3 +2,4 @@ res://models/Joueur/Character.tscn
 res://Map_test.tscn
 res://models/Joueur/Character.gd
 res://models/Areas/wind_up.tscn
+res://models/Areas/Area3D.gd
